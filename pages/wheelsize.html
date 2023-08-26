@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora De Tamaño De Ruedas</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav>
+            <div class="header-content">
+                <ul class="nav-list">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./wheelsize.html">Tamaño De Ruedas</a></li>
+                    <li><a href="./compressionratio.html">Relacion De Compresion</a></li>
+                    <li><a href="./enginespecs.html">Dimensiones Motor</a></li>
+                    <li><a href="./about.html">Acerca De</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Calculadora de Diferencia de Tamaño de Ruedas</h1>
+            <form id="calculator-form">
+                <h2>Rueda Actual</h2>
+                <label for="ancho-actual">Ancho de la Cubierta (mm):</label>
+                <input type="number" id="ancho-actual" name="ancho-actual" required><br><br>
+
+                <label for="perfil-actual">Perfil de la Cubierta (%):</label>
+                <input type="number" id="perfil-actual" name="perfil-actual" required><br><br>
+
+                <label for="tamano-llanta-actual">Tamaño de la Llanta (pulgadas):</label>
+                <input type="number" id="tamano-llanta-actual" name="tamano-llanta-actual" required><br><br>
+
+                <h2>Rueda Nueva</h2>
+                <label for="ancho-nuevo">Ancho de la Cubierta Nueva (mm):</label>
+                <input type="number" id="ancho-nuevo" name="ancho-nuevo" required><br><br>
+
+                <label for="perfil-nuevo">Perfil de la Cubierta Nueva (%):</label>
+                <input type="number" id="perfil-nuevo" name="perfil-nuevo" required><br><br>
+
+                <label for="tamano-llanta-nuevo">Tamaño de la Llanta Nueva (pulgadas):</label>
+                <input type="number" id="tamano-llanta-nuevo" name="tamano-llanta-nuevo" required><br><br>
+
+                <button type="submit">Calcular Diferencia</button>
+            </form>
+            <div id="resultado"></div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <ul class="nav-list">
+                <li><a href="#">Términos y Condiciones</a></li>
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Aviso Legal</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="../js/wheelsize.js"></script>
+</body>
+
+</html>
